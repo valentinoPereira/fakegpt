@@ -18,6 +18,10 @@ A satirical React chat interface parodying AI chat apps with privacy-surveillanc
 - **React Router DOM** 7.13.1
 - Component-scoped CSS styling
 
+## Development Tools
+
+This project is developed using **Cline** in VSCode, an AI-powered coding assistant. The primary AI model used is **z-ai/glm-5**.
+
 ## Project Structure
 
 ```
