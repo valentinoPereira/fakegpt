@@ -6,6 +6,7 @@ paths:
   - "*.css"
   - "vite.config.js"
   - "eslint.config.js"
+  - "package.json"
 ---
 
 # Architecture
