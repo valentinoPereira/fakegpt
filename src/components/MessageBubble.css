@@ -1,0 +1,138 @@
+.message-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.user-row {
+  flex-direction: row-reverse;
+}
+
+.assistant-row {
+  flex-direction: row;
+}
+
+/* Avatars */
+.ai-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  background: #19c37d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Bubbles */
+.bubble {
+  padding: 12px 16px;
+  border-radius: 12px;
+  line-height: 1.65;
+  font-size: 15px;
+  max-width: calc(100% - 90px);
+  word-break: break-word;
+}
+
+.user-bubble {
+  background: #40414f;
+  color: #ececec;
+  border-radius: 12px 2px 12px 12px;
+}
+
+.assistant-bubble {
+  background: transparent;
+  color: #d1d5db;
+  border-radius: 2px 12px 12px 12px;
+  padding-left: 4px;
+}
+
+/* Code blocks */
+.code-block {
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0d0d0d;
+  border: 1px solid #3e3f4b;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: #1e1e1e;
+  border-bottom: 1px solid #3e3f4b;
+}
+
+.code-lang {
+  font-size: 12px;
+  color: #8e8ea0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  text-transform: lowercase;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #8e8ea0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.copy-btn:hover {
+  color: #ececec;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: transparent;
+}
+
+.code-content {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+.code-content::-webkit-scrollbar {
+  height: 4px;
+}
+.code-content::-webkit-scrollbar-thumb {
+  background: #565869;
+  border-radius: 4px;
+}
